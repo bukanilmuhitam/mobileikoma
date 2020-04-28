@@ -1,0 +1,122 @@
+/* Pembungkus */
+.wrap-content{
+    margin : 60px 0 60px 0;
+}
+
+/* Navbar */
+.navbar{
+    background-color: white !important;
+    border-bottom: 1px solid rgba(54,54,54, 0.2);
+    box-shadow: 0px 0px 8px -5px rgba(54,54,54,1);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header{
+    display: block;
+}
+
+/* Icon Toggler */
+.navbar-toggler{
+    padding: 5px 8px;
+}
+
+.navbar-toggler-icon{
+    width: 20px;
+    height: 20px;
+}
+
+nav a img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Utilities */
+.form-nav{
+    background-color: white;
+    border-radius: 20px;
+    text-indent: 5px;
+}
+
+.heading-text{
+    font-size: 18px;
+    color: #4b4b4b;
+}
+
+.indicator-custum{
+    bottom: 0;
+    margin-bottom: -30px;
+    right: 45%;
+    margin-left: 0;
+    /* margin-left: -90px; */
+}
+
+.indicator-custum li{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border : 1px solid rgba(54,54,54, 1);
+}
+
+.indicator-custum li.active{
+    border: 1px solid white;
+    width: 14px;
+    height: 14px;
+    background-color: #227093;
+}
+
+/* Grid diskon */
+.grid-container-diskon{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item-diskon{
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 10rem;
+  border-radius: 8px;
+}
+
+/* Link-readmore */
+.link-readmore{
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 15px;
+}
+
+/* Grid container kategori */
+.grid-container-kategori{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item-kategori{
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 5rem;
+  border-radius: 8px;
+}
+  
+
+
+.carousel-cell {
+    width: 25%;
+    height: 70px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+  
