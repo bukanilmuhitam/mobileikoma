@@ -2,29 +2,38 @@
   <div id="app">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" v-on:click="toggleSide">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" v-on:click="toggleSide">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <form action="" class="form-inline">
-          <input
-            type="text"
-            value=""
-            class="form-control form-nav"
-            placeholder="Luminarc"
-          />
-        </form>
-
-        <a href="">
-          <img src="./assets/iconimg/user.png" alt="" />
-        </a>
-        <div class="div-trolli">
-          <a href="">
-            <img src="./assets/iconimg/cart.png" alt="" />
-          </a>
-          <div class="jumlahTrol">
-            0
+          <form action="" class="form-inline nav-form">
+            <input
+              type="text"
+              value=""
+              class="form-control form-nav"
+              placeholder="Luminarc"
+            />
+          </form>
+          <div class="navbar-nav ml-auto">
+            <a href="" class="nav-item nav-link">
+              <img src="./assets/iconimg/cart.png" alt="" />
+            </a>
+            <a href="" class="nav-item nav-link">
+              <img src="./assets/iconimg/user.png" alt="" />
+              <span class="jumlahTrol">
+                0
+              </span>
+            </a>
           </div>
+
+          <!-- <div class="div-trolli">
+            <a href="">
+              <img src="./assets/iconimg/cart.png" alt="" />
+            </a>
+           
+          </div> -->
         </div>
       </nav>
       <!-- Corusel -->
@@ -41,10 +50,6 @@
             :data-slide-to="index"
             :class="{ active: index === 0 }"
           ></li>
-          <!-- <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="1"
-          ></li> -->
         </ol>
         <div class="carousel-inner">
           <div
@@ -93,6 +98,12 @@
           <div class="col-lg-12">
             <h1 class="heading-text mb-2">Diskon</h1>
             <div class="grid-container-diskon mt-2 mb-1">
+              <div class="item-diskon">
+                diskon
+              </div>
+              <div class="item-diskon">
+                diskon
+              </div>
               <div class="item-diskon">
                 diskon
               </div>
@@ -322,118 +333,130 @@
           </div>
         </div>
         <!-- Trust -->
-
-        <!-- Garansi produk -->
-        <div class="row wrap-content garansi-produk-content">
-          <div class="col-lg-12 padding-20">
-            <h3>Garansi Produk</h3>
-            <ul class="penjelasan-garansi mt-3">
-              <li>Produk dijamin original</li>
-              <li>Packaging paling aman, anti pecah saat dikirim</li>
-              <li>Akan diganti secepatnya apabila pecah saat pengiriman</li>
-            </ul>
-
-            <p class="mt-4 mb-4">Ikuti Kami</p>
-            <div class="d-flex justify-content-center mb-4">
-              <img
-                src="./assets/iconimg/fb.png"
-                alt=""
-                class="sosmed-garansi"
-              />
-              <img
-                src="./assets/iconimg/tw.png"
-                alt=""
-                class="sosmed-garansi"
-              />
-              <img
-                src="./assets/iconimg/ig.png"
-                alt=""
-                class="sosmed-garansi"
-              />
-              <img
-                src="./assets/iconimg/yt.png"
-                alt=""
-                class="sosmed-garansi"
-              />
-              <img
-                src="./assets/iconimg/wa.png"
-                alt=""
-                class="sosmed-garansi"
-              />
-            </div>
-
-            <form action="">
-              <input
-                type="text"
-                class="form-control form-nav"
-                placeholder="081xxxxxxxxx"
-              />
-              <button class="btn btn-secondary mt-2 btn-custum">Daftar</button>
-            </form>
-            <p class="mt-4">
-              Agar bisa mendapatkan informasi diskon dan promo-promo ikoma lebih
-              cepat, Yuk ikutin Group Whatsapp ikoma, masukkan nomor Handphone
-              anda untuk mendapatkan Link Invitation.
-            </p>
-          </div>
-        </div>
-        <!-- Garasni produk -->
-
-        <!-- Jenis Pembayaran -->
-        <div class="row wrap-content">
-          <div class="col-lg-12 jenis-pembayaran">
-            <h1 class="heading-text mb-2">Jenis Pembayaran</h1>
-            <div class="content-logo mb-4">
-              <div class="item-logo">
-                <img src="./assets/iconimg/visa.png" alt="" />
+      </div>
+      <!-- Garansi produk -->
+      <div class="row wrap-content garansi-produk-content">
+        <div class="col-lg-12 padding-20">
+          <div class="container">
+          
+            <div class="row">
+              <div class="col-lg">
+                  <h3 class="mb-4">Garansi Produk</h3>
+                <ul class="penjelasan-garansi mt-3">
+                  <li>Produk dijamin original</li>
+                  <li>Packaging paling aman, anti pecah saat dikirim</li>
+                  <li>Akan diganti secepatnya apabila pecah saat pengiriman</li>
+                </ul>
               </div>
-              <div class="item-logo">
-                <img src="./assets/iconimg/bca.png" alt="" />
+              <div class="col-lg">
+                <h3 class="mb-4">Ikuti Kami</h3>
+                <img
+                  src="./assets/iconimg/fb.png"
+                  alt=""
+                  class="sosmed-garansi"
+                />
+                <img
+                  src="./assets/iconimg/tw.png"
+                  alt=""
+                  class="sosmed-garansi"
+                />
+                <img
+                  src="./assets/iconimg/ig.png"
+                  alt=""
+                  class="sosmed-garansi"
+                />
+                <img
+                  src="./assets/iconimg/yt.png"
+                  alt=""
+                  class="sosmed-garansi"
+                />
+                <img
+                  src="./assets/iconimg/wa.png"
+                  alt=""
+                  class="sosmed-garansi"
+                />
               </div>
-              <div class="item-logo">
-                <img src="./assets/iconimg/mandiri.jpg" alt="" />
-              </div>
-              <div class="item-logo">
-                <img src="./assets/iconimg/permata.png" alt="" />
-              </div>
-            </div>
-
-            <h1
-              class="heading-text mt-4 mb-2"
-              style="margin-top:60px !important; "
-            >
-              Jenis Pengiriman
-            </h1>
-
-            <div class="content-logo grid3 mb-4">
-              <div class="item-logo">
-                <img src="./assets/iconimg/jne.png" alt="" />
-              </div>
-              <div class="item-logo">
-                <img src="./assets/iconimg/tikilogo.png" alt="" />
-              </div>
-              <div class="item-logo">
-                <img src="./assets/iconimg/posindo.jpg" alt="" />
-              </div>
-            </div>
-
-            <h1
-              class="heading-text mt-4 mb-2"
-              style="margin-top:40px !important; "
-            >
-              Jenis Keamanan
-            </h1>
-            <div class="content-logo mb-4">
-              <div class="item-logo">
-                <img src="./assets/iconimg/geo.png" alt="" />
-              </div>
-              <div class="item-logo">
-                <img src="./assets/iconimg/ssl.png" alt="" />
+              <div class="col-lg mt-4">
+                <h3 class="mb-4">Ikuti Group Whatsapp</h3>
+                <form action="">
+                  <input
+                    type="text"
+                    class="form-control form-default"
+                    placeholder="081xxxxxxxxx"
+                  />
+                  <button class="btn btn-secondary mt-2 btn-custum">
+                    Daftar
+                  </button>
+                </form>
+                <p class="mt-4">
+                  Agar bisa mendapatkan informasi diskon dan promo-promo ikoma
+                  lebih cepat, Yuk ikutin Group Whatsapp ikoma, masukkan nomor
+                  Handphone anda untuk mendapatkan Link Invitation.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Jenis Pembayaran -->
+      </div>
+      <!-- Garasni produk -->
+      <div class="container">
+  
+      <!-- Jenis Pembayaran -->
+      <div class="row wrap-content">
+        <div class="col-lg-12 jenis-pembayaran">
+          <h1 class="heading-text mb-2">Jenis Pembayaran</h1>
+          <div class="content-logo mb-4">
+            <div class="item-logo">
+              <img src="./assets/iconimg/visa.png" alt="" />
+            </div>
+            <div class="item-logo">
+              <img src="./assets/iconimg/bca.png" alt="" />
+            </div>
+            <div class="item-logo">
+              <img src="./assets/iconimg/mandiri.jpg" alt="" />
+            </div>
+            <div class="item-logo">
+              <img src="./assets/iconimg/permata.png" alt="" />
+            </div>
+          </div>
+
+          <h1
+            class="heading-text mt-4 mb-2"
+            style="margin-top:60px !important; "
+          >
+            Jenis Pengiriman
+          </h1>
+
+          <div class="content-logo grid3 mb-4">
+            <div class="item-logo">
+              <img src="./assets/iconimg/jne.png" alt="" />
+            </div>
+            <div class="item-logo">
+              <img src="./assets/iconimg/tikilogo.png" alt="" />
+            </div>
+            <div class="item-logo">
+              <img src="./assets/iconimg/posindo.jpg" alt="" />
+            </div>
+          </div>
+
+          <h1
+            class="heading-text mt-4 mb-2"
+            style="margin-top:40px !important; "
+          >
+            Jenis Keamanan
+          </h1>
+          <div class="content-logo mb-4">
+            <div class="item-logo">
+              <img src="./assets/iconimg/geo.png" alt="" />
+            </div>
+            <div class="item-logo">
+              <img src="./assets/iconimg/ssl.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Jenis Pembayaran -->
+            
       </div>
     </main>
     <footer>
@@ -473,14 +496,14 @@ export default {
       document.getElementById("mySidenav").style.width = "0";
     },
     getDatabanner() {
-      axios.get("").then((response) => {
+      axios.get("https://www.ikoma.co.id/product/banner").then((response) => {
         this.bannerList = response.data;
         // console.log(response.data);
       });
     },
     getDataComing() {
       axios
-        .get("")
+        .get("https://www.ikoma.co.id/product/prod?limit=8")
         .then((response) => {
           this.listComing = response.data;
           // console.log(response.data);
@@ -488,7 +511,7 @@ export default {
     },
     getDatanewproduct() {
       axios
-        .get("")
+        .get("https://www.ikoma.co.id/product/prod?limit=4")
         .then((response) => {
           this.listnewProduk = response.data;
           console.log(response.data);

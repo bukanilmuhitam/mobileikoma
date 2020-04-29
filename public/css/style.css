@@ -14,10 +14,27 @@
     margin-top: -10px;
 }
 
+
+.navbar-brand{
+    display: none;
+}
+
+.navbar-nav{
+    flex-direction: row !important;
+    
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+
 header{
     display: inline;
 }
 
+.nav-form{
+    margin-left: 10px;
+}
 
 /* Icon Toggler */
 .navbar-toggler{
@@ -35,13 +52,13 @@ nav a img{
 }
 
 .jumlahTrol{
-  height: 18px;
-  width: 18px;
-   border-radius: 100px;
+    height: 18px;
+    width: 18px;
+    border-radius: 100px;
     background-color: #e74c3c;
     position: absolute;
-    top: 8px;
-    right:10px;
+    top: 10px;
+    right:18px;
     text-align: center;
     font-size: 10px;
     color: white;
@@ -49,6 +66,12 @@ nav a img{
 
 /* Utilities */
 .form-nav{
+    background-color: white;
+    border-radius: 20px;
+    text-indent: 5px;
+}
+
+.form-default{
     background-color: white;
     border-radius: 20px;
     text-indent: 5px;
@@ -338,7 +361,6 @@ footer{
 .content-logo{
     max-width: 1200px;
     display: grid;
-   
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -428,3 +450,105 @@ footer{
 }
 
 .dropdown:hover .drop-content {display: block;}
+
+
+
+/* Desktrop Version */
+@media (min-width: 1200px) { 
+
+        .navbar-brand{
+            display: block;
+        }
+        
+        .nav-item{
+            margin-right: 0;
+        }
+
+        .jumlahTrol{
+            top: 12px;
+            right: 118px;
+        }
+
+        .indicator-custum{
+            bottom: 0;
+            right: 0;
+            margin-right: -80px;
+            margin-bottom: -30px;
+        }
+
+        .grid-container-diskon{
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .item-diskon{
+            height: 15rem;
+        }
+
+        .carousel-cell {
+            width: 20%;
+            height: 150px;
+        }
+
+        .carousel-cell-card{
+            width: 20%;
+            height: 300px;
+        }
+
+        .card-product{
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .item-card-product{
+            height: 25rem;
+        }
+
+        .card-body{
+            margin-top:30px;
+        }
+
+        .title-product{
+            font-size: 16px;
+        }
+
+        .harga-diskon{
+            font-size: 12px;
+        }
+
+        .normal-harga{
+            font-size: 18px;
+        }
+
+        .garansi-produk-content{
+            text-align: left;
+        }
+
+        .icon-trust{
+            width: 40px;
+            height: 40px;
+        }
+                        
+        .content-trust p{
+            line-height: normal;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .sosmed-garansi{
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-form{
+            margin-left: 10px;
+        }
+        .content-logo{
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .form-nav{
+            width: 900px  !important;
+        }
+        .item-logo{
+            height: 150px;
+        }
+ }
