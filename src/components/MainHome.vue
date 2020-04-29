@@ -1,91 +1,5 @@
 <template>
-  <div id="app">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" v-on:click="toggleSide">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <form action="" class="form-inline">
-          <input
-            type="text"
-            value=""
-            class="form-control form-nav"
-            placeholder="Luminarc"
-          />
-        </form>
-
-        <a href="">
-          <img src="./assets/iconimg/user.png" alt="" />
-        </a>
-        <div class="div-trolli">
-          <a href="">
-            <img src="./assets/iconimg/cart.png" alt="" />
-          </a>
-          <div class="jumlahTrol">
-            0
-          </div>
-        </div>
-      </nav>
-      <!-- Corusel -->
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators indicator-custum">
-          <li
-            v-for="(item, index) in bannerList"
-            :key="item.data"
-            data-target="#carouselExampleIndicators"
-            :data-slide-to="index"
-            :class="{ active: index === 0 }"
-          ></li>
-          <!-- <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="1"
-          ></li> -->
-        </ol>
-        <div class="carousel-inner">
-          <div
-            class="carousel-item"
-            v-for="(item, index) in bannerList"
-            :key="item.data"
-            :class="{ active: index === 0 }"
-          >
-            <img
-              :src="
-                'https://www.ikoma.co.id/upload/mainbanner/' + item.vBannerFile
-              "
-              class="d-block w-100"
-              alt="foto-banner"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- End corusel -->
-    </header>
-
-    <!-- Side Navigation -->
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" v-on:click="toggleCloseSide"
-        >&times;</a
-      >
-      <div class="div-brand wrap-content-sidenav"></div>
-      <a href="#">Home</a>
-      <a href="#">Info</a>
-      <a href="#">Masuk</a>
-      <a href="#">Daftar</a>
-      <div class="dropdown">
-        <p>Kategori</p>
-        <div class="drop-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-        </div>
-      </div>
-    </div>
-    <!-- End Navigation -->
-
+    
     <main>
       <div class="container">
         <!-- Diskon -->
@@ -288,7 +202,7 @@
             <div class="row">
               <div class="col-lg content-trust mb-2">
                 <img
-                  src="./assets/iconimg/good.png"
+                  src="../assets/iconimg/good.png"
                   alt=""
                   class="float-right icon-trust"
                 />
@@ -296,7 +210,7 @@
               </div>
               <div class="col-lg content-trust mb-2">
                 <img
-                  src="./assets/iconimg/compass.png"
+                  src="../assets/iconimg/compass.png"
                   alt=""
                   class="float-right icon-trust"
                 />
@@ -304,7 +218,7 @@
               </div>
               <div class="col-lg content-trust mb-2">
                 <img
-                  src="./assets/iconimg/headset.png"
+                  src="../assets/iconimg/headset.png"
                   alt=""
                   class="float-right icon-trust"
                 />
@@ -312,7 +226,7 @@
               </div>
               <div class="col-lg content-trust mb-2">
                 <img
-                  src="./assets/iconimg/shield.png"
+                  src="../assets/iconimg/shield.png"
                   alt=""
                   class="float-right icon-trust"
                 />
@@ -336,27 +250,27 @@
             <p class="mt-4 mb-4">Ikuti Kami</p>
             <div class="d-flex justify-content-center mb-4">
               <img
-                src="./assets/iconimg/fb.png"
+                src="../assets/iconimg/fb.png"
                 alt=""
                 class="sosmed-garansi"
               />
               <img
-                src="./assets/iconimg/tw.png"
+                src="../assets/iconimg/tw.png"
                 alt=""
                 class="sosmed-garansi"
               />
               <img
-                src="./assets/iconimg/ig.png"
+                src="../assets/iconimg/ig.png"
                 alt=""
                 class="sosmed-garansi"
               />
               <img
-                src="./assets/iconimg/yt.png"
+                src="../assets/iconimg/yt.png"
                 alt=""
                 class="sosmed-garansi"
               />
               <img
-                src="./assets/iconimg/wa.png"
+                src="../assets/iconimg/wa.png"
                 alt=""
                 class="sosmed-garansi"
               />
@@ -385,16 +299,16 @@
             <h1 class="heading-text mb-2">Jenis Pembayaran</h1>
             <div class="content-logo mb-4">
               <div class="item-logo">
-                <img src="./assets/iconimg/visa.png" alt="" />
+                <img src="../assets/iconimg/visa.png" alt="" />
               </div>
               <div class="item-logo">
-                <img src="./assets/iconimg/bca.png" alt="" />
+                <img src="../assets/iconimg/bca.png" alt="" />
               </div>
               <div class="item-logo">
-                <img src="./assets/iconimg/mandiri.jpg" alt="" />
+                <img src="../assets/iconimg/mandiri.jpg" alt="" />
               </div>
               <div class="item-logo">
-                <img src="./assets/iconimg/permata.png" alt="" />
+                <img src="../assets/iconimg/permata.png" alt="" />
               </div>
             </div>
 
@@ -407,13 +321,13 @@
 
             <div class="content-logo grid3 mb-4">
               <div class="item-logo">
-                <img src="./assets/iconimg/jne.png" alt="" />
+                <img src="../assets/iconimg/jne.png" alt="" />
               </div>
               <div class="item-logo">
-                <img src="./assets/iconimg/tikilogo.png" alt="" />
+                <img src="../assets/iconimg/tikilogo.png" alt="" />
               </div>
               <div class="item-logo">
-                <img src="./assets/iconimg/posindo.jpg" alt="" />
+                <img src="../assets/iconimg/posindo.jpg" alt="" />
               </div>
             </div>
 
@@ -425,10 +339,10 @@
             </h1>
             <div class="content-logo mb-4">
               <div class="item-logo">
-                <img src="./assets/iconimg/geo.png" alt="" />
+                <img src="../assets/iconimg/geo.png" alt="" />
               </div>
               <div class="item-logo">
-                <img src="./assets/iconimg/ssl.png" alt="" />
+                <img src="../assets/iconimg/ssl.png" alt="" />
               </div>
             </div>
           </div>
@@ -436,18 +350,12 @@
         <!-- End Jenis Pembayaran -->
       </div>
     </main>
-    <footer>
-      Copyright &copy; 2017 - 2020 ikoma.co.id. All right reserved
-      <a href="">Ketentuan Layanan</a> | <a href="">Kebijakan Privasi</a>
-    </footer>
-  </div>
 </template>
-
 <script>
 import axios from "axios";
 import Flickity from "vue-flickity";
-
 export default {
+  name : 'MainHome',
   components: {
     Flickity,
   },
@@ -466,17 +374,8 @@ export default {
     };
   },
   methods: {
-    toggleSide: function() {
-      document.getElementById("mySidenav").style.width = "100%";
-    },
     toggleCloseSide: function() {
       document.getElementById("mySidenav").style.width = "0";
-    },
-    getDatabanner() {
-      axios.get("https://www.ikoma.co.id/product/banner").then((response) => {
-        this.bannerList = response.data;
-        // console.log(response.data);
-      });
     },
     getDataComing() {
       axios
@@ -502,7 +401,6 @@ export default {
     },
   },
   mounted() {
-    this.getDatabanner();
     this.getDataComing();
     this.getDatanewproduct();
   },

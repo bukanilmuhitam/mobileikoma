@@ -10,12 +10,14 @@
     box-shadow: 0px 0px 8px -5px rgba(54,54,54,1);
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 999;
+    margin-top: -10px;
 }
 
 header{
-    display: block;
+    display: inline;
 }
+
 
 /* Icon Toggler */
 .navbar-toggler{
@@ -28,8 +30,21 @@ header{
 }
 
 nav a img{
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
+}
+
+.jumlahTrol{
+  height: 18px;
+  width: 18px;
+   border-radius: 100px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 8px;
+    right:10px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
 }
 
 /* Utilities */
@@ -37,6 +52,13 @@ nav a img{
     background-color: white;
     border-radius: 20px;
     text-indent: 5px;
+}
+
+.btn-custum{
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #a8d0ff;
+    border: none;
 }
 
 .heading-text{
@@ -117,6 +139,292 @@ nav a img{
     margin-right: 10px;
     background: #8C8;
     border-radius: 5px;
-    counter-increment: gallery-cell;
 }
+
+/* Card slider */
+.carousel-cell-card{
+    width: 50%;
+    height: 200px;
+    margin-right: 10px;
+    /* background-color: red; */
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(54,54,54, 0.2);
+    box-shadow: 0px 0px 8px -5px rgba(54,54,54,1);
+}
+
+.carousel-cell-card:hover{
   
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+
+.img-card{
+    width: 100%;
+    height: 85%;
+    /* background-color: red; */
+}
+.img-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.body-card{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+}
+
+.head-text-card{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
+}
+
+/* Card product */
+
+.card-product{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item-card-product{
+    height: 15rem;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(54,54,54, 0.2);
+    box-shadow: 0px 0px 8px -5px rgba(54,54,54,1);
+}
+
+.img-card-product{
+    width: 100%;
+    height: 60%;
+}
+
+.img-card-product img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-body{
+    height: 40%;
+    position: relative;
+    padding: 20px;
+}
+
+.card-body .title-product{
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.diskon{
+    position: absolute;
+    top: 0;
+    padding: 3px 6px;
+    border-radius:4px;
+    background-color: #e1315b;
+    color: white;
+    font-size: 12px;
+    right: 10px;
+    margin-top: -10px;
+}
+
+.title-product{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.harga-diskon{
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+
+.normal-harga{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.content-trust p{
+    line-height: 65px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.content-trust::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(54,54,54, 0.2);
+}
+
+.icon-trust{
+    width: 50px;
+    height: 50px;
+}
+
+/* garansi produk content */
+.garansi-produk-content{
+    background-color: #37bbec;
+    text-align: center;
+    color: white;
+}
+
+.garansi-produk-content h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.penjelasan-garansi{
+    position: relative;
+	list-style: none;
+	margin-left: 0;
+    padding-left: 1.2em;
+    color: white;
+    font-size: 14px;
+    text-align: left !important;
+}
+
+.penjelasan-garansi li::before{
+    content: "-";
+	position: absolute;
+    left: 0;
+   
+}
+
+.sosmed-garansi{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.jenis-pembayaran{
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(54,54,54, 0.2);
+    box-shadow: 0px 0px 8px -5px rgba(54,54,54,1);
+}
+
+
+/* Footer */
+footer{
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.content-logo{
+    max-width: 1200px;
+    display: grid;
+   
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3{
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.item-logo{
+    height: 50px;
+    margin:0 auto;
+    /* background-color: brown; */
+}
+
+.item-logo img{
+    width: 100%;
+}
+
+/* Sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #3498db;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+    
+  
+ .wrap-content-sidenav{
+    padding: 8px 8px 8px 32px;
+ }
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown p{
+    font-size: 22px;
+    color: #818181;
+    transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top:50px;
+    left : 25px;
+}
+
+
+.drop-content a:hover {background-color:#3498db;
+    color: white;
+}
+
+.dropdown:hover .drop-content {display: block;}
