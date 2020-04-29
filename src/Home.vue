@@ -473,14 +473,14 @@ export default {
       document.getElementById("mySidenav").style.width = "0";
     },
     getDatabanner() {
-      axios.get("https://www.ikoma.co.id/product/banner").then((response) => {
+      axios.get("").then((response) => {
         this.bannerList = response.data;
         // console.log(response.data);
       });
     },
     getDataComing() {
       axios
-        .get("https://www.ikoma.co.id/product/prod?limit=4")
+        .get("")
         .then((response) => {
           this.listComing = response.data;
           // console.log(response.data);
@@ -488,7 +488,7 @@ export default {
     },
     getDatanewproduct() {
       axios
-        .get("https://www.ikoma.co.id/product/prod?limit=4")
+        .get("")
         .then((response) => {
           this.listnewProduk = response.data;
           console.log(response.data);
